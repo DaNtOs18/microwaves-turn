@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/microwaves-turn/static/css/main.1635e87c.chunk.css",
-    "main.js": "/microwaves-turn/static/js/main.51386e58.chunk.js",
-    "main.js.map": "/microwaves-turn/static/js/main.51386e58.chunk.js.map",
-    "runtime-main.js": "/microwaves-turn/static/js/runtime-main.10dbff4d.js",
-    "runtime-main.js.map": "/microwaves-turn/static/js/runtime-main.10dbff4d.js.map",
-    "static/js/2.be0fe28c.chunk.js": "/microwaves-turn/static/js/2.be0fe28c.chunk.js",
-    "static/js/2.be0fe28c.chunk.js.map": "/microwaves-turn/static/js/2.be0fe28c.chunk.js.map",
-    "static/js/3.258e7f89.chunk.js": "/microwaves-turn/static/js/3.258e7f89.chunk.js",
-    "static/js/3.258e7f89.chunk.js.map": "/microwaves-turn/static/js/3.258e7f89.chunk.js.map",
+    "main.css": "/microwaves-turn/static/css/main.c3803d8c.chunk.css",
+    "main.js": "/microwaves-turn/static/js/main.65e04d60.chunk.js",
+    "main.js.map": "/microwaves-turn/static/js/main.65e04d60.chunk.js.map",
+    "runtime-main.js": "/microwaves-turn/static/js/runtime-main.64532386.js",
+    "runtime-main.js.map": "/microwaves-turn/static/js/runtime-main.64532386.js.map",
+    "static/js/2.15b4d9af.chunk.js": "/microwaves-turn/static/js/2.15b4d9af.chunk.js",
+    "static/js/2.15b4d9af.chunk.js.map": "/microwaves-turn/static/js/2.15b4d9af.chunk.js.map",
     "index.html": "/microwaves-turn/index.html",
-    "static/css/main.1635e87c.chunk.css.map": "/microwaves-turn/static/css/main.1635e87c.chunk.css.map",
-    "static/js/2.be0fe28c.chunk.js.LICENSE.txt": "/microwaves-turn/static/js/2.be0fe28c.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/microwaves-turn/static/media/logo.6ce24c58.svg"
+    "static/css/main.c3803d8c.chunk.css.map": "/microwaves-turn/static/css/main.c3803d8c.chunk.css.map",
+    "static/js/2.15b4d9af.chunk.js.LICENSE.txt": "/microwaves-turn/static/js/2.15b4d9af.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.10dbff4d.js",
-    "static/js/2.be0fe28c.chunk.js",
-    "static/css/main.1635e87c.chunk.css",
-    "static/js/main.51386e58.chunk.js"
+    "static/js/runtime-main.64532386.js",
+    "static/js/2.15b4d9af.chunk.js",
+    "static/css/main.c3803d8c.chunk.css",
+    "static/js/main.65e04d60.chunk.js"
   ]
 }

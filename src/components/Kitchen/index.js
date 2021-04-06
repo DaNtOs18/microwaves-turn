@@ -4,48 +4,100 @@ import KitchenComponent from './Kitchen';
 class Kitchen extends Component {
 
     state = {
-        timerOn: false,
-        timerStart: 0,
-        timerTime: 0
+        timerOn: [false, false, false, false, false, false],
+        timerStart: [0, 0, 0, 0, 0, 0],
+        timerTime: [0, 0, 0, 0, 0, 0]
     };
 
-    startTimer = () => {
+    startTimer = index => {
+        const { timerOn, timerTime, timerStart } = this.state;
+        timerOn[index] = true;
+        timerTime[index] = this.state.timerTime[index];
+        timerStart[index] = this.state.timerTime[index];
         this.setState({
-            timerOn: true,
-            timerTime: this.state.timerTime,
-            timerStart: this.state.timerTime
+            timerOn: timerOn,
+            timerTime: timerTime,
+            timerStart: timerStart
         });
-        this.timer = setInterval(() => {
-            const newTime = this.state.timerTime - 10;
+        const timer = () => {
+            const newTime = this.state.timerTime[index] - 10;
             if (newTime >= 0) {
+                timerTime[index] = newTime;
                 this.setState({
-                    timerTime: newTime
+                    timerTime: timerTime
                 });
             } else {
                 clearInterval(this.timer);
-                this.setState({ timerOn: false });
+                timerOn[index] = false;
+                this.setState({ timerOn: timerOn });
             }
-        }, 10);
+        };
+        if (index === 0) {
+            this.timer0 = setInterval(timer, 10);
+        }
+        if (index === 1) {
+            this.timer1 = setInterval(timer, 10);
+        }
+        if (index === 2) {
+            this.timer2 = setInterval(timer, 10);
+        }
+        if (index === 3) {
+            this.timer3 = setInterval(timer, 10);
+        }
+        if (index === 4) {
+            this.timer4 = setInterval(timer, 10);
+        }
+        if (index === 5) {
+            this.timer5 = setInterval(timer, 10);
+        }
     };
 
-    stopTimer = () => {
-        clearInterval(this.timer);
-        this.setState({ timerOn: false });
+    stopTimer = index => {
+        const { timerOn } = this.state;
+        switch (index) {
+            case 0:
+                clearInterval(this.timer0);
+                break;
+            case 1:
+                clearInterval(this.timer1);
+                break;
+            case 2:
+                clearInterval(this.timer2);
+                break;
+            case 3:
+                clearInterval(this.timer3);
+                break;
+            case 4:
+                clearInterval(this.timer4);
+                break;
+            case 5:
+                clearInterval(this.timer5);
+                break;
+            default:
+                break;
+        }
+        timerOn[index] = false;
+        this.setState({ timerOn: timerOn });
     };
 
-    resetTimer = () => {
-        if (this.state.timerOn === false) {
+    resetTimer = index => {
+        const { timerTime } = this.state;
+        if (this.state.timerOn[index] === false) {
+            timerTime[index] = 0;
             this.setState({
-                timerTime: 0
+                timerTime: timerTime
             });
         }
     };
 
-    adjustTimer = () => {
+    adjustTimer = index => {
         const { timerTime, timerOn } = this.state;
-        if (!timerOn) {
-            this.setState({ timerTime: timerTime + 30000 });
+        if (!timerOn[index]) {
+            const timerTimeTmp = JSON.parse(JSON.stringify(timerTime));
+            timerTimeTmp[index] = timerTime[index] + 30000;
+            this.setState({ timerTime: timerTimeTmp });
         }
+        this.forceUpdate();
     };
 
     render() {

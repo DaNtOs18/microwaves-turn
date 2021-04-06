@@ -7,19 +7,22 @@ class Microwave extends Component {
         this.state = {};
     }
     render() {
-        const { timerTime, seconds, minutes, timerStart, timerOn, startTimer, stopTimer, adjustTimer, resetTimer } = this.props;
+        const { timerTime, timerStart, timerOn, startTimer, stopTimer, adjustTimer, resetTimer, index } = this.props;
         return (
-            <MicrowaveComponent
-                timerTime={timerTime}
-                seconds={seconds}
-                minutes={minutes}
-                timerStart={timerStart}
-                timerOn={timerOn}
-                startTimer={startTimer}
-                stopTimer={stopTimer}
-                adjustTimer={adjustTimer}
-                resetTimer={resetTimer}
-            />
+            timerTime ? (
+                <MicrowaveComponent
+                    timerTime={timerTime}
+                    timerStart={timerStart}
+                    timerOn={timerOn}
+                    startTimer={startTimer}
+                    stopTimer={stopTimer}
+                    adjustTimer={adjustTimer}
+                    resetTimer={resetTimer}
+                    index={index}
+                />
+            ) : (
+                null
+            )
         );
     }
 }

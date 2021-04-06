@@ -7,11 +7,11 @@ class Panel extends Component {
         this.state = {};
     }
     render() {
-        const { seconds, minutes } = this.props;
+        const { timerTime, index } = this.props;
         return (
             <PanelComponent
-                seconds={seconds}
-                minutes={minutes}
+                timerTime={timerTime}
+                index={index}
             />
         );
     }

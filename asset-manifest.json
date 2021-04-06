@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/microwaves-turn/static/css/main.c3803d8c.chunk.css",
+    "main.js": "/microwaves-turn/static/js/main.65e04d60.chunk.js",
+    "main.js.map": "/microwaves-turn/static/js/main.65e04d60.chunk.js.map",
+    "runtime-main.js": "/microwaves-turn/static/js/runtime-main.64532386.js",
+    "runtime-main.js.map": "/microwaves-turn/static/js/runtime-main.64532386.js.map",
+    "static/js/2.15b4d9af.chunk.js": "/microwaves-turn/static/js/2.15b4d9af.chunk.js",
+    "static/js/2.15b4d9af.chunk.js.map": "/microwaves-turn/static/js/2.15b4d9af.chunk.js.map",
+    "index.html": "/microwaves-turn/index.html",
+    "static/css/main.c3803d8c.chunk.css.map": "/microwaves-turn/static/css/main.c3803d8c.chunk.css.map",
+    "static/js/2.15b4d9af.chunk.js.LICENSE.txt": "/microwaves-turn/static/js/2.15b4d9af.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.64532386.js",
+    "static/js/2.15b4d9af.chunk.js",
+    "static/css/main.c3803d8c.chunk.css",
+    "static/js/main.65e04d60.chunk.js"
+  ]
+}

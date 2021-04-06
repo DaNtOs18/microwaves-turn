@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 import PanelComponent from './Panel';
- 
+
 class Panel extends Component {
-    render() { 
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+    render() {
+        const { seconds, minutes } = this.props;
         return (
-            <PanelComponent />
+            <PanelComponent
+                seconds={seconds}
+                minutes={minutes}
+            />
         );
     }
 }
- 
+
 export default Panel;

@@ -5,8 +5,13 @@ function KitchenComponent(props) {
     const { timerTime, timerStart, timerOn, startTimer, stopTimer, adjustTimer, resetTimer } = props;
     return (
         <div className="w-screen h-screen flex flex-column">
-            <div className="w-1/4 h-full bg-gray-100">
-
+            <div className="w-1/4 h-full bg-gray-100 border border-solid border-gray-400 flex flex-row">
+                <div className="w-1/2 h-full border-r border-solid border-gray-400 flex items-center justify-end">
+                    <div className="h-1/6 border border-solid border-gray-400 mr-10" />
+                </div>
+                <div className="w-1/2 h-full border-l border-solid border-gray-400 flex items-center justify-start">
+                <div className="h-1/6 border border-solid border-gray-400 ml-10" />
+                </div>
             </div>
             <div className="w-3/4 h-full flex flex-col">
                 <div className="w-full h-1/6 flex flex-row flex-wrap">
@@ -127,7 +132,20 @@ function KitchenComponent(props) {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-2/6 bg-gray-200"></div>
+                <div className="w-full h-2/6 bg-gray-200 flex flex-row">
+                    <div className="w-1/4 h-full border border-solid border-gray-400 flex items-center justify-end">
+                        <div className="w-2 h-2 rounded-full border border-solid border-gray-400 bg-gray-400 mr-6"/>
+                    </div>
+                    <div className="w-1/4 h-full border border-solid border-gray-400 flex items-center justify-start">
+                        <div className="w-2 h-2 rounded-full border border-solid border-gray-400 bg-gray-400 ml-6"/>
+                    </div>
+                    <div className="w-1/4 h-full border border-solid border-gray-400 flex items-center justify-end">
+                        <div className="w-2 h-2 rounded-full border border-solid border-gray-400 bg-gray-400 mr-6"/>
+                    </div>
+                    <div className="w-1/4 h-full border border-solid border-gray-400 flex items-center justify-start">
+                        <div className="w-2 h-2 rounded-full border border-solid border-gray-400 bg-gray-400 ml-6"/>
+                    </div>
+                </div>
             </div>
         </div>
     );
